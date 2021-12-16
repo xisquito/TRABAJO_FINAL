@@ -27,6 +27,7 @@ public class playerController : MonoBehaviour
     private AudioSource cameraAudioSource;
     private AudioSource playerAudioSource;
 
+    public int score;
     public bool gameOver = false;
 
 
@@ -100,6 +101,22 @@ public class playerController : MonoBehaviour
 
                 gameOver = true;
             }
+        }
+
+    }
+
+    private void OnTriggerEnter(Collider otherTrigger)
+    {
+        if (otherTrigger.gameObject.CompareTag("Moneda"))
+        {
+            Destroy(otherTrigger.gameObject);
+            score = score + 1;
+        }
+        if (otherTrigger.gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(otherTrigger.gameObject);
+            Destroy(gameObject);
+            Debug.Log($"Puntuacion final:{score}");
         }
 
     }
