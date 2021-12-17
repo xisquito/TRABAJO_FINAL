@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class rotationObject : MonoBehaviour
 {
+    //Le damos un valor a la funcion "rotationSpeed" de 200
     public float rotationSpeed = 200f;
 
 
@@ -16,6 +17,7 @@ public class rotationObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Le damos la accion de dar vueltas sobre su mismo eje a la velocidad de 200 constantemente
         transform.Rotate(Vector3.up * Time.deltaTime * rotationSpeed);
     }
 }
