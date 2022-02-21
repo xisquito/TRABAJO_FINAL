@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: fc1fb4c9bf228f643976203468a02f40
+  - enabled: 1
+    path: Assets/Scenes/Videojuego_Song_Of_Life.unity
+    guid: e4bdfd26d3ec7a747b58aa03921f2710
+  m_configObjects: {}
